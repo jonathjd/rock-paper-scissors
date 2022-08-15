@@ -2,4 +2,4 @@ This is a simple rock paper scissors game written in javascript that allows a us
 
 Demonstrated Skills:
 - Javascript
--Algorithms
+- Algorithms
