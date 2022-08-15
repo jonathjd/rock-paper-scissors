@@ -10,8 +10,10 @@ function getComputerChoice() {
             compHand = "Paper";
             break;
         case 3:
-            compHand = "Scissors"
+            compHand = "Scissors";
+            break;
     }
+    return compHand;
 }
 
 function playRound(playerSelection, ComputerSelection) {
@@ -52,11 +54,10 @@ function playRound(playerSelection, ComputerSelection) {
 function game() {   
     var humanScore = 0;
     var computerScore = 0;
-
-    let playerSelection = prompt("Make your selection: Rock, paper, scissors.", "None");
-    let ComputerSelection = getComputerChoice();
     
     for (let i=0; i < 5; i++) {
+        let playerSelection = prompt("Make your selection: Rock, paper, scissors.", "None");
+        let ComputerSelection = getComputerChoice();
         let roundResult = playRound(playerSelection, ComputerSelection);
         switch (roundResult) {
             case 0:
